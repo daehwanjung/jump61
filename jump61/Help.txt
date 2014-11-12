@@ -1,0 +1,10 @@
+clear - Ends the current game and clears the board to its initial state. Playing is suspended until the next "start" command.
+start - Continues a game from the current position, if not already playing. Alternates between red and blue moves.
+quit - Exits the program.
+auto P - Pauses the game and makes player P an automated player. P must be "red" or "blue". Blue is automated by default.
+manual P - Pauses the game and makes player P a human player. P takes moves from the terminal. Red is manual by default.
+size N - Pauses the game and clears the board, with size set to N. N is 6 by default.
+move N - Pauses the game and sets the number of the next move to N. Used to set up an initial position after a "set" command. Initially N = 1.
+set R C N P - Pauses the game. Places N spots at row R and column C. P must be "r" for red or "b" for blue to indicate the color of the square. If N = 0, P is ignored and the square is cleared.
+dump - Prints the current board in a readable format.
+seed N - Sets the random seed to N.
